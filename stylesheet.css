@@ -1,0 +1,242 @@
+* {
+    box-sizing: border-box;
+}
+  
+/* Reset CSS */
+html, body,
+  ul, ol, li,
+  h1, h2, h3, h4, h5, h6, p, div {
+    margin: 0;
+    padding: 0;
+}
+  
+body {
+    font-family: "Lucida Grande";
+}
+  
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+/* Reset CSS SELESAI */
+
+.container {
+    max-width: 1170px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+header {
+    height: 70px;
+    width: 100%;
+    background: rgb(200,212,88);
+    background: linear-gradient(0deg, rgba(200,212,88,1) 0%, rgba(71,190,110,1) 100%);
+    position :fixed;
+    top: 0;
+    z-index: 10;
+    margin: auto;
+}
+
+.logo {
+    width: 124px;
+    height: 40px;
+    margin-left: 550px;
+    margin-top: 5px;
+    /*position: fixed;*/
+}
+
+.header-left {
+    float: left;
+}
+
+.header-right {
+    float: right;
+    margin-left: 420px;
+    margin-top: 40px;
+   position: fixed;
+}
+
+.header-right a {
+    line-height: 30px;
+    padding: 0 25px;
+    color: black;
+    display: block;
+    float: left;
+    transition: all 0.5s;
+}
+
+.header-right a:hover {
+    background-color: #ffa8a8;
+}
+
+.main {
+    background-image: url("assets/bg4.svg");
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    min-height: 750px;   
+}
+
+.title {
+    font-size: 45px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #ee9931;
+    padding-left: 97px;
+    padding-top: 150px;
+}
+
+.main p {
+/* Aku ganti dari container p jadi main p, karena container p bakal ngerusak container lainnya */    
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: 200;
+    padding-left: 97px;
+    color:black;
+}
+
+.lesson {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+  
+.lesson-icon {
+    box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.2);
+}
+  
+.box {
+    padding: 0 16px;
+    background: rgba(210, 243, 212, 0.3)
+}
+  
+.box::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+  
+.title1 {
+    color: rgb(63, 64, 126);
+}
+  
+.button1 {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    background-color: #3fbe33;
+    color: white;
+    box-shadow: 0 7px #a8eeae;
+    /* background-color: #495af7; */
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+}
+  
+/* .button1:hover {
+    background-color: rgb(30, 33, 194);
+} */
+.button1:active {
+    position: relative;
+    top: 7px;
+    box-shadow: none;
+}
+  
+.gmbr {
+    opacity: 0.8;
+}
+  
+.gmbr:hover {
+    opacity: 1;
+}
+  
+/*message section */
+.message-wrapper {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 80px;
+    text-align: center;
+}
+    
+.message {
+      padding: 15px 40px;
+      background-color: #271bc7;
+      cursor: pointer;
+      color: white;
+      box-shadow: 0 7px #495af7;
+}
+    
+.message:active {
+      position: relative;
+      top: 7px;
+      box-shadow: none;
+}
+
+
+.lesson-wrapper {
+    padding-bottom: 80px;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+  
+.heading {
+    padding-top: 80px;
+    padding-bottom: 50px;
+    color: #5f5d60;
+}
+  
+.heading h2 {
+    font-weight: normal;
+}
+  
+.heading h3 {
+    font-weight: normal;
+}
+  
+span.menu-icon {
+    color: white;
+    float: right;
+    font-size: 25px;
+    padding: 21px 0;
+    display: none;
+}
+
+footer {
+    height: 190px;
+    padding: 40px;
+    background-color: rgb(71,190,110);
+    background: linear-gradient(0deg, rgba(71,190,110,1) 0%, rgba(200,212,88,1) 100%);
+}
+
+.footer-logo {
+    float: left;
+}
+
+.footer-list {
+    float: right;
+}
+
+.footer-list li {
+    margin-bottom: 20px;
+}
+
+.footer-list a {
+    color: black;
+}
+
+.footer-logo img {
+    width: 175px;
+}
+  
+.footer-logo p {
+    font-size: 15px;
+}
